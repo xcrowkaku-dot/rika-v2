@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "savedAt": 1782904763417,
+  "lockedThreads": [],
+  "mutedThreads": [],
+  "groupsCache": [],
+  "groupStats": [],
+  "replyDelay": {
+    "enabled": false,
+    "ms": 1500
+  },
+  "autoReplies": []
+}

@@ -1,0 +1,146 @@
+[2026-07-01 11:00:09.339] [SUCCESS] [Config] Validation complete — 0 warning(s).
+[2026-07-01 11:00:09.779] [INFO   ] [Maintenance] Running startup self-checks...
+[2026-07-01 11:00:09.780] [SUCCESS] [Maintenance] Self-checks complete.
+[2026-07-01 11:00:09.781] [INFO   ] [Health] Watchdog started — checks every 30s
+[2026-07-01 11:00:09.781] [WARN   ] [Dashboard] [SECURITY] DASHBOARD_API_KEY is not set as an environment variable. Using key from config.json — make sure config.json is not committed to git.
+[2026-07-01 11:00:09.785] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:00:10.120] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:00:10.120] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 1)...
+[2026-07-01 11:00:10.129] [SUCCESS] [Dashboard] API + Dashboard listening on port 3001
+[2026-07-01 11:00:10.957] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:00:10.957] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:00:10.957] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:00:10.957] [WARN   ] [Health] Login failure count: 1
+[2026-07-01 11:00:10.958] [INFO   ] [Bot] Retrying in 45s (attempt 1)...
+[2026-07-01 11:00:55.961] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:00:55.964] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:00:55.964] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 2)...
+[2026-07-01 11:00:56.760] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:00:56.761] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:00:56.761] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:00:56.761] [WARN   ] [Health] Login failure count: 2
+[2026-07-01 11:00:56.761] [INFO   ] [Bot] Retrying in 68s (attempt 2)...
+[2026-07-01 11:02:04.262] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:02:04.263] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:02:04.264] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 3)...
+[2026-07-01 11:02:04.855] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:02:04.856] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:02:04.856] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:02:04.856] [WARN   ] [Health] Login failure count: 3
+[2026-07-01 11:02:04.856] [WARN   ] [AlertMgr] Alert [login]: 🚨 تحذير: فشل تسجيل الدخول 3 مرات متتالية
+[2026-07-01 11:02:04.856] [INFO   ] [Bot] Retrying in 101s (attempt 3)...
+[2026-07-01 11:03:46.111] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:03:46.112] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:03:46.112] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 4)...
+[2026-07-01 11:03:46.113] [INFO   ] [HumanSim] Backoff level set to 1 (multiplier: 2×)
+[2026-07-01 11:03:46.113] [INFO   ] [CookieRefresher] Backoff level set to 1 — interval 8min
+[2026-07-01 11:03:46.113] [WARN   ] [Backoff] Adaptive backoff level 1 applied after 3 login failure(s).
+[2026-07-01 11:03:46.677] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:03:46.677] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:03:46.677] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:03:46.677] [WARN   ] [Health] Login failure count: 4
+[2026-07-01 11:03:46.677] [INFO   ] [Bot] Retrying in 152s (attempt 4)...
+[2026-07-01 11:06:18.556] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:06:18.557] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:06:18.557] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 5)...
+[2026-07-01 11:06:18.557] [WARN   ] [Backoff] Adaptive backoff level 1 applied after 4 login failure(s).
+[2026-07-01 11:06:19.312] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:06:19.312] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:06:19.312] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:06:19.312] [WARN   ] [Diagnostics] Recurring error (5x): [Bot] Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.
+[2026-07-01 11:06:19.313] [WARN   ] [Health] Login failure count: 5
+[2026-07-01 11:06:19.313] [INFO   ] [Bot] Retrying in 228s (attempt 5)...
+[2026-07-01 11:08:42.172] [INFO   ] [HumanSim] Stopped.
+[2026-07-01 11:08:42.459] [SUCCESS] [Config] Validation complete — 0 warning(s).
+[2026-07-01 11:08:43.772] [SUCCESS] [State] Restored: 0 locked, 0 muted, 0 groups.
+[2026-07-01 11:08:43.918] [INFO   ] [Maintenance] Running startup self-checks...
+[2026-07-01 11:08:43.920] [SUCCESS] [Maintenance] Self-checks complete.
+[2026-07-01 11:08:43.922] [INFO   ] [Health] Watchdog started — checks every 30s
+[2026-07-01 11:08:43.922] [WARN   ] [Dashboard] [SECURITY] DASHBOARD_API_KEY is not set as an environment variable. Using key from config.json — make sure config.json is not committed to git.
+[2026-07-01 11:08:43.928] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:08:44.152] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:08:44.153] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 1)...
+[2026-07-01 11:08:44.160] [SUCCESS] [Dashboard] API + Dashboard listening on port 3001
+[2026-07-01 11:08:45.150] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:08:45.151] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:08:45.151] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:08:45.151] [WARN   ] [Health] Login failure count: 1
+[2026-07-01 11:08:45.152] [INFO   ] [Bot] Retrying in 45s (attempt 1)...
+[2026-07-01 11:08:46.708] [WARN   ] [Dashboard] Unauthorized access attempt from 127.0.0.1 on GET /favicon.ico
+[2026-07-01 11:09:23.047] [INFO   ] [HumanSim] Stopped.
+[2026-07-01 11:09:23.162] [SUCCESS] [Config] Validation complete — 0 warning(s).
+[2026-07-01 11:09:23.381] [SUCCESS] [State] Restored: 0 locked, 0 muted, 0 groups.
+[2026-07-01 11:09:23.426] [INFO   ] [Maintenance] Running startup self-checks...
+[2026-07-01 11:09:23.428] [SUCCESS] [Maintenance] Self-checks complete.
+[2026-07-01 11:09:23.430] [INFO   ] [Health] Watchdog started — checks every 30s
+[2026-07-01 11:09:23.430] [WARN   ] [Dashboard] [SECURITY] DASHBOARD_API_KEY is not set as an environment variable. Using key from config.json — make sure config.json is not committed to git.
+[2026-07-01 11:09:23.434] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:09:23.444] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:09:23.444] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 1)...
+[2026-07-01 11:09:23.450] [SUCCESS] [Dashboard] API + Dashboard listening on port 3001
+[2026-07-01 11:09:24.234] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:09:24.234] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:09:24.234] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:09:24.234] [WARN   ] [Health] Login failure count: 1
+[2026-07-01 11:09:24.235] [INFO   ] [Bot] Retrying in 45s (attempt 1)...
+[2026-07-01 11:09:24.235] [INFO   ] [Bot] Watching for new appstate.json — will restart automatically when detected.
+[2026-07-01 11:09:24.235] [INFO   ] [Session] Watching /home/runner/workspace/artifacts/rika-bot for appstate.json updates...
+[2026-07-01 11:10:09.241] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:10:09.242] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:10:09.243] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 2)...
+[2026-07-01 11:10:09.876] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:10:09.876] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:10:09.876] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:10:09.876] [WARN   ] [Health] Login failure count: 2
+[2026-07-01 11:10:09.878] [INFO   ] [Bot] Retrying in 68s (attempt 2)...
+[2026-07-01 11:10:09.878] [INFO   ] [Bot] Watching for new appstate.json — will restart automatically when detected.
+[2026-07-01 11:10:09.879] [INFO   ] [Session] Watching /home/runner/workspace/artifacts/rika-bot for appstate.json updates...
+[2026-07-01 11:11:17.388] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:11:17.390] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:11:17.391] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 3)...
+[2026-07-01 11:11:18.119] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:11:18.119] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:11:18.119] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:11:18.119] [WARN   ] [Health] Login failure count: 3
+[2026-07-01 11:11:18.120] [WARN   ] [AlertMgr] Alert [login]: 🚨 تحذير: فشل تسجيل الدخول 3 مرات متتالية
+[2026-07-01 11:11:18.120] [INFO   ] [Bot] Retrying in 101s (attempt 3)...
+[2026-07-01 11:11:18.120] [INFO   ] [Bot] Watching for new appstate.json — will restart automatically when detected.
+[2026-07-01 11:11:18.120] [INFO   ] [Session] Watching /home/runner/workspace/artifacts/rika-bot for appstate.json updates...
+[2026-07-01 11:12:59.377] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:12:59.379] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:12:59.379] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 4)...
+[2026-07-01 11:12:59.380] [INFO   ] [HumanSim] Backoff level set to 1 (multiplier: 2×)
+[2026-07-01 11:12:59.380] [INFO   ] [CookieRefresher] Backoff level set to 1 — interval 8min
+[2026-07-01 11:12:59.380] [WARN   ] [Backoff] Adaptive backoff level 1 applied after 3 login failure(s).
+[2026-07-01 11:13:00.072] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:13:00.072] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:13:00.072] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:13:00.072] [WARN   ] [Health] Login failure count: 4
+[2026-07-01 11:13:00.073] [INFO   ] [Bot] Retrying in 152s (attempt 4)...
+[2026-07-01 11:13:00.073] [INFO   ] [Bot] Watching for new appstate.json — will restart automatically when detected.
+[2026-07-01 11:13:00.073] [INFO   ] [Session] Watching /home/runner/workspace/artifacts/rika-bot for appstate.json updates...
+[2026-07-01 11:15:31.957] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:15:31.958] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:15:31.959] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 5)...
+[2026-07-01 11:15:31.959] [WARN   ] [Backoff] Adaptive backoff level 1 applied after 4 login failure(s).
+[2026-07-01 11:15:32.767] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:15:32.767] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:15:32.767] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:15:32.767] [WARN   ] [Diagnostics] Recurring error (5x): [Bot] Error retrieving userID. This can be caused by many factors, including being blocked by Facebook for logging in from an unknown location. Try logging in with a browser to verify.
+[2026-07-01 11:15:32.767] [WARN   ] [Health] Login failure count: 5
+[2026-07-01 11:15:32.767] [INFO   ] [Bot] Retrying in 228s (attempt 5)...
+[2026-07-01 11:15:32.768] [INFO   ] [Bot] Watching for new appstate.json — will restart automatically when detected.
+[2026-07-01 11:15:32.768] [INFO   ] [Session] Watching /home/runner/workspace/artifacts/rika-bot for appstate.json updates...
+[2026-07-01 11:19:20.600] [SUCCESS] [Session] Loaded 10 cookies from primary.
+[2026-07-01 11:19:20.608] [SUCCESS] [Commands] 7 command(s) loaded.
+[2026-07-01 11:19:20.608] [INFO   ] [Bot] Starting Rika v2.1.0 (attempt 6)...
+[2026-07-01 11:19:20.609] [INFO   ] [HumanSim] Backoff level set to 2 (multiplier: 4×)
+[2026-07-01 11:19:20.609] [INFO   ] [CookieRefresher] Backoff level set to 2 — interval 20min
+[2026-07-01 11:19:20.609] [WARN   ] [Backoff] Adaptive backoff level 2 applied after 5 login failure(s).
+[2026-07-01 11:19:21.348] [ERROR  ] [Login] FAILED [BLOCKED_OR_EXPIRED] — عدد الكوكيز: 10 | آخر تعديل: 2026-07-01T10:59:07.944Z
+[2026-07-01 11:19:21.348] [ERROR  ] [Login] الأسباب المحتملة: انتهت صلاحية الكوكيز أو حجب Replit IP.
+[2026-07-01 11:19:21.348] [ERROR  ] [Login] الحل: افتح فيسبوك من متصفحك، ثم صدّر appstate.json جديد.
+[2026-07-01 11:19:21.348] [WARN   ] [Health] Login failure count: 6
+[2026-07-01 11:19:21.349] [INFO   ] [Bot] Retrying in 300s (attempt 6)...
+[2026-07-01 11:19:21.352] [INFO   ] [Bot] Watching for new appstate.json — will restart automatically when detected.
+[2026-07-01 11:19:21.352] [INFO   ] [Session] Watching /home/runner/workspace/artifacts/rika-bot for appstate.json updates...
