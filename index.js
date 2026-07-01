@@ -277,18 +277,8 @@ async function handleMessage(api, event, commands) {
     mutedThreads.delete(threadID);
   }
 
-  let cachedIsThreadAdmin = null;
-  if (lockedThreads.has(threadID)) {
-    const botAdm = isBotAdmin(senderID);
-    if (!botAdm) {
-      cachedIsThreadAdmin = await isThreadAdmin(api, senderID, threadID);
-      if (!cachedIsThreadAdmin) {
-        const cached = groupsCache.get(threadID);
-        logViolation({ threadID, threadName: (cached && cached.name) || threadID, senderID, messagePreview: (body || "").slice(0, 80) });
-        return;
-      }
-    } else { cachedIsThreadAdmin = true; }
-  }
+  // Lock check is deferred to after command parsing so keyword listeners
+  // and auto-replies still work for everyone regardless of lock state.
 
   const _pendingEntry = pendingReplies.get(senderID);
   if (_pendingEntry && (!body || !body.startsWith(config.prefix))) {
@@ -333,6 +323,25 @@ async function handleMessage(api, event, commands) {
     );
   }
 
+  // ── Lock mode: restrict ALL commands to admins only ──────────────────────
+  if (lockedThreads.has(threadID)) {
+    const botAdm = isBotAdmin(senderID);
+    const threadAdm = botAdm || await isThreadAdmin(api, senderID, threadID);
+    if (!threadAdm) {
+      const cachedGroup = groupsCache.get(threadID);
+      logViolation({
+        threadID,
+        threadName: (cachedGroup && cachedGroup.name) || threadID,
+        senderID,
+        messagePreview: body.slice(0, 80),
+      });
+      return api.sendMessage(
+        "🔒 البوت مقفل — الأوامر متاحة للمشرفين فقط.\nتواصل مع أحد المشرفين لتفعيل الأمر.",
+        threadID
+      ).catch(e => logger.warn("Command", "Lock message failed: " + e.message));
+    }
+  }
+
   if (cmd.groupOnly && !isGroup) {
     return api.sendMessage("❌ هذا الأمر للمجموعات فقط.", threadID).catch(e =>
       logger.warn("Command", "Group-only message failed: " + e.message)
@@ -341,7 +350,7 @@ async function handleMessage(api, event, commands) {
 
   if (cmd.adminOnly) {
     const botAdm    = isBotAdmin(senderID);
-    const threadAdm = cachedIsThreadAdmin !== null ? cachedIsThreadAdmin : await isThreadAdmin(api, senderID, threadID);
+    const threadAdm = botAdm || await isThreadAdmin(api, senderID, threadID);
     if (!botAdm && !threadAdm) {
       return api.sendMessage("🔒 هذا الأمر يتطلب صلاحية مشرف.", threadID).catch(e =>
         logger.warn("Command", "Admin-only message failed: " + e.message)
