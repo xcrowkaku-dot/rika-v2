@@ -323,11 +323,9 @@ async function handleMessage(api, event, commands) {
     );
   }
 
-  // ── Lock mode: restrict ALL commands to admins only ──────────────────────
+  // ── Lock mode: restrict ALL commands to BOT ADMINS only ──────────────────
   if (lockedThreads.has(threadID)) {
-    const botAdm = isBotAdmin(senderID);
-    const threadAdm = botAdm || await isThreadAdmin(api, senderID, threadID);
-    if (!threadAdm) {
+    if (!isBotAdmin(senderID)) {
       const cachedGroup = groupsCache.get(threadID);
       logViolation({
         threadID,
@@ -336,7 +334,7 @@ async function handleMessage(api, event, commands) {
         messagePreview: body.slice(0, 80),
       });
       return api.sendMessage(
-        "🔒 البوت مقفل — الأوامر متاحة للمشرفين فقط.\nتواصل مع أحد المشرفين لتفعيل الأمر.",
+        "🔒 البوت مقفل — الأوامر متاحة لأدمن البوت فقط.",
         threadID
       ).catch(e => logger.warn("Command", "Lock message failed: " + e.message));
     }
