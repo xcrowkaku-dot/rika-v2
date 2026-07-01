@@ -27,7 +27,6 @@ const { lockedThreads, mutedThreads, groupsCache, autoReplies, groupStats, reply
 const { setBotApi, setBotStatus, logActivity, logViolation, startApiServer, setCookieRefresher, setSession: setApiSession } = require("./api");
 const pendingReplies = require("./utils/pendingReplies");
 const threadScanner  = require("./utils/threadScanner");
-const aiChat         = require("./utils/aiChat");
 const { MQTT_CONFIG } = require("./config/constants");
 
 // ── Config constants ──────────────────────────────────────────────────────────
@@ -260,18 +259,8 @@ async function handleMessage(api, event, commands) {
     }
   }
 
-  // AI private chat — responds to direct messages with the witty Rika persona
-  if (!isGroup) {
-    if (!body || !body.trim()) return;
-    try {
-      const reply = await aiChat.chat(senderID, body.trim());
-      await api.sendMessage(reply, threadID);
-    } catch (e) {
-      logger.error("AI", "Private AI reply failed: " + e.message);
-      api.sendMessage("🤖 عذراً، مشكلة تقنية. حاول مجدداً!", threadID).catch(() => {});
-    }
-    return;
-  }
+  // Private messages — ignored silently (no auto-reply)
+  if (!isGroup) return;
 
   if (mutedThreads.has(threadID)) {
     const until = mutedThreads.get(threadID);
