@@ -1,0 +1,63 @@
+{
+  "_comment": "Bot configuration file. Copy to config.json and fill in your values.",
+  "prefix": "-",
+  "credentials": {
+    "_comment": "Optional email/password for auto re-login.",
+    "email": "",
+    "password": ""
+  },
+  "appStatePath": "./appstate.json",
+  "bot": {
+    "name": "Eagle",
+    "version": "2.1.0",
+    "adminIDs": [
+      "YOUR_FACEBOOK_USER_ID"
+    ],
+    "language": "en"
+  },
+  "features": {
+    "autoSaveAppState": true,
+    "autoSaveIntervalMs": 900000,
+    "greetNewMembers": false,
+    "farewellMembers": false,
+    "antiSpam": true,
+    "antiSpamCooldownMs": 3000,
+    "logMessages": true
+  },
+  "humanSimulator": {
+    "_comment": "Human simulation — makes the account look like a real person to Facebook.",
+    "enabled": true,
+    "presenceIntervalMs": 300000,
+    "typingIntervalMs": 480000,
+    "readIntervalMs": 180000,
+    "jitterMs": 30000,
+    "maxTypingMs": 4000,
+    "maxGroupsPerCycle": 3
+  },
+  "dashboard": {
+    "_comment": "Dashboard API — set apiKey to a strong secret (≥32 chars, mixed case, numbers, symbols).",
+    "apiKey": "REPLACE_WITH_STRONG_SECRET_MIN_32_CHARS",
+    "port": 3001
+  },
+  "messages": {
+    "greet": "Welcome to the group, {name}! 👋",
+    "farewell": "Goodbye, {name}! We'll miss you. 👋",
+    "commandNotFound": "Unknown command '{cmd}'. Type {prefix}help for a list of commands.",
+    "errorOccurred": "⚠️ An error occurred while running that command.",
+    "botRestarted": "🤖 Bot session has been restored successfully!"
+  },
+  "loginOptions": {
+    "online": true,
+    "selfListen": false,
+    "listenEvents": true,
+    "listenTyping": false,
+    "autoMarkRead": true,
+    "autoMarkDelivery": false,
+    "autoReconnect": true,
+    "simulateTyping": true,
+    "forceLogin": false,
+    "maxConcurrentRequests": 5,
+    "maxRequestsPerMinute": 40,
+    "requestCooldownMs": 60000
+  }
+}

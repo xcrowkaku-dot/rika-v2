@@ -1,0 +1,20 @@
+"use strict";
+
+module.exports = {
+  CACHE_CONFIG: {
+    MAX_GROUPS:          5000,
+    MAX_GROUP_AGE_MS:    30 * 24 * 60 * 60 * 1000,
+    EVICTION_INTERVAL_MS: 6 * 60 * 60 * 1000,
+  },
+  MQTT_CONFIG: {
+    ERROR_THRESHOLD:     5,
+    STALE_CONNECTION_MS: 10 * 60 * 1000,
+    MAX_RESTART_ATTEMPTS: 10,
+    RESTART_BACKOFF_MS:  5000,
+    MAX_RESTART_DELAY:   5 * 60 * 1000,
+  },
+  SECURITY: {
+    MIN_API_KEY_LENGTH: 32,
+    SESSION_TIMEOUT:    3600000,
+  },
+};
