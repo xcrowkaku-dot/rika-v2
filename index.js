@@ -27,6 +27,7 @@ const { lockedThreads, mutedThreads, groupsCache, autoReplies, groupStats, reply
 const { setBotApi, setBotStatus, logActivity, logViolation, startApiServer, setCookieRefresher, setSession: setApiSession } = require("./api");
 const pendingReplies = require("./utils/pendingReplies");
 const threadScanner  = require("./utils/threadScanner");
+const aiChat         = require("./utils/aiChat");
 const { MQTT_CONFIG } = require("./config/constants");
 
 // ── Config constants ──────────────────────────────────────────────────────────
@@ -259,15 +260,16 @@ async function handleMessage(api, event, commands) {
     }
   }
 
-  // FIX #6: Short professional private auto-reply (ar/en, ≤160 chars)
+  // AI private chat — responds to direct messages with the witty Rika persona
   if (!isGroup) {
-    const autoReplyMsg =
-      "🤖 Rika Bot — بوت آلي.\n" +
-      "للمساعدة استخدم أمر `help` داخل مجموعة.\n" +
-      "This is a bot — use `help` in a group.";
-    api.sendMessage(autoReplyMsg, threadID).catch(e =>
-      logger.warn("AutoReply", "Private auto-reply failed: " + e.message)
-    );
+    if (!body || !body.trim()) return;
+    try {
+      const reply = await aiChat.chat(senderID, body.trim());
+      await api.sendMessage(reply, threadID);
+    } catch (e) {
+      logger.error("AI", "Private AI reply failed: " + e.message);
+      api.sendMessage("🤖 عذراً، مشكلة تقنية. حاول مجدداً!", threadID).catch(() => {});
+    }
     return;
   }
 
